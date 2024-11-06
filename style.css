@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    color: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 8px; */
+}
+
+
+header .logo img{
+    width: 100px;
+    margin-left: 20px;
+    filter: drop-shadow(0 0 12px blue);
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navbar ul li a{
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .navbar ul li a:hover{
+    text-decoration: underline;
+}
+
+
+header .navbar{
+    /* margin-left: 400px; */
+    margin-left: 300px;
+}
+
+header .link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header .link li a{
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+    /* filter: drop-shadow(0 0 10px blue); */
+}
+header .link li a:hover{
+    filter: drop-shadow(0 0 10px blue);
+    scale: 1.1;
+}
+
+/* ===================Hero Style============== */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hero .right{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.right h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+.right h1{
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.right .button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+    padding: 6px;
+    width: 130px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button:hover{
+    scale: 1.1;
+    border-radius: 12px;
+    box-shadow: 0 22px 30px black;
+    outline: none;
+}
+
+.left{
+    margin-right:150px;
+    /* margin-right:100px; */
+}
+.left img{
+    width: 340px;
+    filter: drop-shadow(0 16px 30px yellow);
+}
+
+
+/* ==============Responsive ============= */
+
+@media (max-width:1085px){
+    .hero .right h1{
+        font-size: 44px;
+    }
+
+    header .link{
+        display: none;
+    }
+}
+@media (max-width:975px){
+    .hero .right h1{
+        font-size: 33px;
+    }
+}
+@media (max-width:875px){
+    .hero {
+        display: block;
+        margin: 20px;
+        text-align: center;
+    }
+}
